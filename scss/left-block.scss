@@ -1,0 +1,12 @@
+.left-block {
+  width: 688px;
+  height: 963px;
+
+  &__border {
+    width: 624px;
+    height: 899px;
+    border: solid 1px #eaeaea;
+    border-radius: 64px;
+    padding: 32px;
+  }
+}

@@ -1,0 +1,36 @@
+.block-login {
+  max-width: 100%;
+  min-height: 963px; }
+
+.block-login_flex {
+  display: flex;
+  padding: 32px; }
+
+.header-block {
+  max-width: 558px;
+  min-width: 82px;
+  padding: 6px 0 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal; }
+  .header-block__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #172239;
+    font-family: Montserrat, sans-serif; }
+  .header-block__logo {
+    font-size: 40px;
+    line-height: 60px;
+    color: #fb779f;
+    font-family: Montserrat, sans-serif; }
+
+.left-block__wrapper-border {
+  width: 624px;
+  min-height: 899px;
+  border: solid 1px lightgray;
+  border-radius: 64px;
+  padding: 32px;
+  margin: 0 auto;
+  text-align: center; }
+
+/*# sourceMappingURL=index.css.map */

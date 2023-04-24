@@ -1,0 +1,20 @@
+.wrapper-btn {
+  margin-top: 50px;
+  &__btn-login {
+    width: 624px;
+    height: 65px;
+    padding: 16px 21px 16px 21px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #172239;
+    background-color: #ffdfd6;
+    border-radius: 20px;
+    text-align: center;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  &__btn-login:last-child {
+    margin-top: 24px;
+  }
+}

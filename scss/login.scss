@@ -1,0 +1,27 @@
+.login {
+  padding: 0 32px 32px 32px;
+  width: 100%;
+  &__titles {
+    font-family: Montserrat, sans-serif;
+    max-width: 624px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 31.92px;
+    color: #172239;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__subtitle {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 26.08px;
+    letter-spacing: normal;
+    color: #6d6d78;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+  }
+}

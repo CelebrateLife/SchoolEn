@@ -1,0 +1,15 @@
+.stepTwo {
+  text-align: center;
+  width: 624px;
+  height: 834px;
+}
+.stepTwo__select-student {
+  width: 624px;
+  height: 240px;
+  padding: 32px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 32px;
+  background-color: #fb779f;
+}

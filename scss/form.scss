@@ -1,0 +1,63 @@
+.form {
+  width: 624px;
+  height: 595px;
+  &__border {
+    width: 624px;
+    height: 64px;
+    border: 1px solid #6d6d78;
+    border-radius: 20px;
+    padding: 16px 16px 16px 66px;
+    position: relative;
+    margin-bottom: 30px;
+
+  }
+  &__border:hover {
+    transition: all 200ms ease-in-out;
+    border-color: #52c3ff;
+  }
+
+  &__reload-block {
+    text-align: right;
+    padding-bottom: 10px;
+  }
+
+  &__reload-pass {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+    right: 140px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  &__label-email {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #6d6d78;
+    margin-bottom: 14px;
+  }
+
+  &__email {
+    outline: none !important;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #6d6d78;
+    padding-top: 3px;
+  }
+
+  &__svg {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 15px;
+    left:20px;
+  }
+
+}
+

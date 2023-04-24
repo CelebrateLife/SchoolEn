@@ -1,0 +1,41 @@
+.block-header {
+  padding-top: 10px;
+  max-width: 100%;
+  text-align: center;
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-top: 13px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 0.8;
+    text-align: center;
+    color: #fb779f;
+  }
+
+  &__title_width {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 13px;
+  }
+
+  &__margin {
+    margin: 0 auto;
+  }
+
+  &__subtitle_color {
+    font-size: 16px;
+    line-height: 1.63;
+    color: #6d6d78;
+    font-weight: 400;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 13px;
+  }
+
+
+}
