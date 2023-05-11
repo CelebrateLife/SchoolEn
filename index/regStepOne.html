@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/wizard.js"></script>
 </head>
 <body>
   <div class="stepTwo">
+      <div class="stepBlock">
       <div class="login__titles">
           <p class="login__title stepTwo__width_title">Кто ты? :-)</p>
           <p class="login__subtitle">
@@ -14,6 +16,7 @@
               немного о себе
           </p>
       </div>
+          <form action="#" class="form-user">
       <div class="stepTwo__select-student stepTwo__select-student_select">
           <input name="radio" type="radio" id="radio-1"  checked="checked"/>
           <label for="radio-1" class="stepTwo__label">
@@ -31,6 +34,7 @@
               </div>
           </label>
       </div>
+          </form>
       <div class="stepTwo__select-student stepTwo__select-student_select">
           <input type="radio"  name="radio"  id="radio-2" />
           <label for="radio-2" class="stepTwo__label">
@@ -47,11 +51,14 @@
               </div>
           </label>
       </div>
-      <div class="pagination pagination_steps">
-          <button class="pagination__item active pagination__item_steps-one"></button>
-          <button class="pagination__item pagination__item_steps-two"></button>
+      </div>
+      <div class="stepTwo__pag">
+          <button class="stepTwo__lol stepTwo__lol_steps-one active" id="stepTwo-right-btn"></button>
+          <button class="stepTwo__lol stepTwo__lol_steps-two" id="stepTwo-left-btn"></button>
+      </div>
+      <div class="wrapper-btn">
+          <button class="wrapper-btn__btn-login">Продолжить</button>
       </div>
   </div>
-  <script defer  src="../js/wizard.js"></script>
 </body>
 </html>

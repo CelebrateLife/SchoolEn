@@ -26,4 +26,14 @@
     margin-left: 12px;
     cursor: pointer;
   }
+
+  &_position {
+    position: relative;
+    top: 10px;
+
+  }
+
+  &__left_display {
+    display: inline-block;
+  }
 }

@@ -24,6 +24,10 @@
   padding: 32px;
 }
 
+#btn-registration {
+  display: none;
+}
+
 .block-header {
   padding-top: 10px;
   max-width: 100%;
@@ -131,6 +135,13 @@
   margin-left: 12px;
   cursor: pointer;
 }
+.btn-slider_position {
+  position: relative;
+  top: 10px;
+}
+.btn-slider__left_display {
+  display: inline-block;
+}
 
 .login {
   padding: 0 32px 32px 32px;
@@ -158,6 +169,11 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 15px;
+}
+.login__titles_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form {
@@ -216,6 +232,16 @@
   top: 15px;
   left: 20px;
 }
+.form__stepThree {
+  width: 624px;
+  height: 100px;
+  background-color: #fb779f;
+}
+
+.form_stepThree {
+  width: 624px;
+  height: 500px;
+}
 
 .wrapper-btn {
   margin-top: 50px;
@@ -238,12 +264,13 @@
 }
 
 .stepTwo {
+  display: none;
   text-align: center;
   width: 624px;
-  height: 834px;
+  height: 600px;
 }
 .stepTwo__select-student {
-  margin-top: 24px;
+  margin-top: 54px;
 }
 .stepTwo__block_background {
   background-color: #fb779f;
@@ -291,6 +318,24 @@
 .stepTwo__login-titles_margin {
   margin-top: 5px;
 }
+.stepTwo__pag {
+  text-align: center;
+  margin-top: 52px;
+}
+.stepTwo__lol {
+  width: 15px;
+  height: 6px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.form-user input:checked ~ .stepTwo__label {
+  border-color: #52c3ff;
+}
+
+.reject {
+  display: none;
+}
 
 .stepTwo input {
   position: absolute;
@@ -303,8 +348,13 @@
   overflow: hidden;
 }
 
-.stepTwo input:checked ~ .stepTwo__label {
-  border-color: #52c3ff;
+.stepThree {
+  display: none;
+  width: 624px;
+  height: 686px;
+}
+.stepThree__margin-left {
+  margin: 0 auto;
 }
 
 * {

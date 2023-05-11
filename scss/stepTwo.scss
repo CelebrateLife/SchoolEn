@@ -1,10 +1,12 @@
 .stepTwo {
+  display: none;
   text-align: center;
   width: 624px;
-  height: 834px;
+  height: 600px;
+
 
  &__select-student {
-   margin-top: 24px;
+   margin-top: 54px;
  }
   &__block_background {
     background-color: #fb779f;
@@ -51,8 +53,28 @@
     margin-top: 5px;
   }
 
+  &__pag {
+    text-align: center;
+    margin-top: 52px;
+  }
+  &__lol {
+    width: 15px;
+    height: 6px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+
 }
 
+
+.form-user input:checked ~ .stepTwo__label {
+  border-color: #52c3ff;
+}
+
+.reject {
+  display: none;
+}
 
 .stepTwo input {
   position: absolute;
@@ -64,6 +86,7 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-.stepTwo input:checked ~ .stepTwo__label {
-  border-color: #52c3ff;
-}
+
+
+
+
