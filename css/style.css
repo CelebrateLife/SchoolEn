@@ -243,6 +243,10 @@
   height: 500px;
 }
 
+.error {
+  border-color: red;
+}
+
 .wrapper-btn {
   margin-top: 50px;
 }

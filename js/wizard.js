@@ -21,6 +21,38 @@ const btnLogin = document.getElementById('btn-login');
 const btnBackStep = document.getElementById('btn-back-step');
 const btnBackStepOne = document.getElementById('btn-back-stepOne');
 const btnRegistrationId = document.getElementById('btn-registration');
+const selectStudent = document.querySelector('.student');
+const selectTeacher = document.querySelector('.teacher');
+const formStepThree = {
+    name: document.querySelector('.form__name'),
+    email: document.querySelector('.form__email'),
+    password: document.querySelector('.form__password'),
+    passwordRepeat: document.querySelector('.password-repeat')
+}
+
+const inputName = document.getElementById('nameStepThree');
+const inputEmail =  document.getElementById('emailStepThree');
+const inputPassword = document.getElementById('passwordStepThree');
+const inputPasswordRepeat = document.getElementById('repeat_password');
+const inputNamesBorder = document.querySelector('.form__border-email');
+const inputEmailBorder = document.querySelector('.email-border');
+const inputPasswordBorder = document.querySelector('.password-border');
+const inputRepeatPasswordBorder = document.querySelector('.repeat-border');
+
+
+const inputsValue = [inputName, inputEmail, inputPassword, inputPasswordRepeat];
+const inputsBorder = [inputNamesBorder, inputEmailBorder, inputPasswordBorder, inputRepeatPasswordBorder];
+
+
+const registerUser = {
+    type: '',
+    name: '',
+    email: '',
+    password: '',
+    repeatPassword: ''
+};
+
+const jsonRegisterUser = JSON.stringify(registerUser)
 
 
 btnBackStepOne.onclick = () => {
@@ -41,7 +73,8 @@ paginationStepOne.onclick = () => {
     paginationStepTwo.style.backgroundColor = "#eaeaea";
     stepOneBlock.style.display = 'block';
     blockStepThree.style.display = 'none';
-
+    btnRegistrationId.style.display = 'none';
+    btnLogin.style.display = 'block';
 }
 
 btnLogin.onclick = () => {
@@ -59,6 +92,8 @@ paginationStepTwo.onclick = () => {
     paginationStepOne.style.backgroundColor = "#eaeaea";
     stepOneBlock.style.display = 'none';
     blockStepThree.style.display = 'block';
+    btnRegistrationId.style.display = 'block';
+    btnLogin.style.display = 'none';
 }
 
 btnBackStep.onclick = () => {
@@ -66,6 +101,8 @@ btnBackStep.onclick = () => {
     paginationStepTwo.style.backgroundColor = "#eaeaea";
     stepOneBlock.style.display = 'block';
     blockStepThree.style.display = 'none';
+    btnRegistrationId.style.display = 'none';
+    btnLogin.style.display = 'block';
 }
 
 
@@ -115,16 +152,68 @@ const f = btnRightSlider.onclick = () => {
 
 setInterval(f,3000)
 
-const selectStudent = document.getElementById('radio-1');
-const selectTeacher = document.getElementById('radio-2');
-
-const registerUser = [
-]
+selectStudent.onclick = (e) => {
+    registerUser.type = e.target.id;
+}
 
 selectTeacher.onclick = (e) => {
-    selectTeacher.style.borderColor = "#52c3ff"
-    registerUser.push({type: e.target.name})
+    registerUser.type = e.target.id;
 }
 
 
-console.log(registerUser)
+inputName.onchange = (e) => {
+    if(inputName.value.length > 0) {
+        inputNamesBorder.classList.remove('error')
+    }
+    registerUser.name = e.target.value;
+}
+
+inputEmail.onchange = (e) => {
+    if(inputEmail.value.length > 0) {
+        inputEmailBorder.classList.remove('error');
+    }
+    registerUser.email = e.target.value;
+}
+
+inputPassword.onchange = (e) => {
+    if(inputPassword.value.length > 0) {
+        inputEmailBorder.classList.remove('error');
+    }
+    registerUser.password = e.target.value;
+}
+
+inputPasswordRepeat.onchange = (e) => {
+    if(inputPasswordRepeat.value.length > 0) {
+        inputEmailBorder.classList.remove('error');
+    }
+    registerUser.repeatPassword = e.target.value;
+}
+
+const btnReg = document.getElementById('btn-registration');
+
+
+btnReg.onclick = (e) => {
+
+
+    inputsValue.forEach((el,i) => {
+
+        if(el.value.length === 0) {
+            inputsBorder[i].classList.add('error')
+        }
+
+
+    })
+
+    if(inputPassword.value !== inputPasswordRepeat.value) {
+        alert('Пароли не совпадают!')
+    }
+
+    if(registerUser.type === 'user__teacher') {
+        localStorage.teacher = jsonRegisterUser;
+        window.location.href = ""
+    }else if(registerUser.type === 'user__student') {
+        localStorage.student = jsonRegisterUser;
+    }
+ }
+
+
