@@ -361,6 +361,114 @@
   margin: 0 auto;
 }
 
+input[type=radio] {
+  display: none;
+}
+
+.container-md {
+  max-width: 618px;
+  padding: 0 64px;
+}
+
+.lesson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.lesson__title-name {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #172239;
+  margin-bottom: 25px;
+}
+.lesson__flex-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.lesson__btn-exit-block:nth-child(1) {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+  color: #172239;
+  border-radius: 20px;
+  border: solid 1px darkgray;
+}
+.lesson__btn-exit-block:nth-child(2) {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+  color: #172239;
+  background-color: #ffdfd6;
+  border-radius: 20px;
+  border: solid 1px darkgray;
+}
+.lesson__btn-exit {
+  width: 304px;
+  height: 65px;
+  padding: 16px 21px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+}
+
+.card-border {
+  border-top: outset;
+  border-radius: 20px;
+  width: 30px;
+}
+
+.card {
+  border: none;
+  padding: 16px;
+}
+
+.time-select__subtitle {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6d6d78;
+}
+.time-select__subtitle-two {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6d6d78;
+}
+.time-select__block-margin {
+  margin-right: 10px;
+}
+.time-select__flex-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.time-select__one-block {
+  display: block;
+  width: 147px;
+  height: 63px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.time-select input:checked + .time-select__one-block {
+  border-color: #52c3ff;
+  background-color: #52c3ff;
+}
+
 * {
   margin: 0;
   padding: 0;
