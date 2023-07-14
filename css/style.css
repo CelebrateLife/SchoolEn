@@ -368,6 +368,8 @@ input[type=radio] {
 .container-md {
   max-width: 618px;
   padding: 0 64px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .lesson {
@@ -382,7 +384,7 @@ input[type=radio] {
   font-size: 24px;
   font-weight: 600;
   color: #172239;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .lesson__flex-block {
   display: -webkit-box;
@@ -392,7 +394,7 @@ input[type=radio] {
 }
 .lesson__btn-exit-block {
   margin-right: 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-size: 20px;
   line-height: 32px;
   color: #172239;
@@ -401,7 +403,7 @@ input[type=radio] {
   width: 260px;
   height: 65px;
   background: transparent;
-  border: 1px solid black;
+  border: 2px solid #eaeaea;
   border-radius: 20px;
   font-family: Montserrat, sans-serif;
   font-size: 20px;
@@ -417,14 +419,14 @@ input[type=radio] {
 }
 
 .card-border {
-  border-top: outset;
-  border-radius: 20px;
-  width: 30px;
-}
-
-.card {
-  border: none;
-  padding: 16px;
+  border-radius: 32px;
+  width: 225px;
+  height: 162px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #eaeaea;
 }
 
 .time-select__btn-exit {
@@ -469,6 +471,12 @@ input[type=radio] {
 .time-select input:checked + .time-select__one-block {
   border-color: #52c3ff;
   background-color: #52c3ff;
+}
+
+.lesson .card input:checked + .card_select {
+  border: 2px solid #52c3ff;
+  border-radius: 32px;
+  height: 400px;
 }
 
 * {
